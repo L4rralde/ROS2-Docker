@@ -24,6 +24,14 @@ I'm starting this repo with instructions for apple silicon, but in the future I 
 docker pull ros:ros-<ros_distro>-base
 ```
 
+### Alternative. Use this repo's (or any custom) Dockerfile.
+```shell
+cd <this_repo_root>
+docker build -t <name_for_the_image> .  
+```
+
+You can use this image with same instructions but replace `ros:ros-<ros_distro>-base` with `<name_for_the_image>`.
+
 
 ## Usage
 Once you installed docker, xquartz and a ros image:
